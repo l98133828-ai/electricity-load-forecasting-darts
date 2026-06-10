@@ -79,6 +79,16 @@ hourly_consumption = current_cumulative_import - previous_cumulative_import
 
 MAPE 整体偏高，主要原因是住户小时用电量存在大量低值时段。当真实值接近 0 时，即使绝对误差较小，百分比误差也会被明显放大。因此在该任务中，MAE 和 RMSE 比 MAPE 更适合作为主要评价指标。
 
+## 结果可视化
+
+最佳模型预测效果如下：
+
+![Electricity best forecast](outputs/electricity_best_forecast.png)
+
+小时用电量序列如下：
+
+![Electricity hourly consumption](outputs/electricity_hourly_consumption.png)
+
 ## 输出文件
 
 - `outputs/electricity_model_comparison.csv`：真实电力负荷模型对比结果
