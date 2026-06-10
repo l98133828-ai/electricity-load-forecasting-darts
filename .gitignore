@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Raw downloaded datasets can be re-downloaded from the source in README.
+data/*.csv
+
+# Local editor files
+.vscode/
